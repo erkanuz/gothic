@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gothic/static/css/main.0f883b65.css",
-    "main.js": "/gothic/static/js/main.8650d314.js",
+    "main.css": "/gothic/static/css/main.6fe3370e.css",
+    "main.js": "/gothic/static/js/main.f43d882a.js",
     "static/js/227.56e284f1.chunk.js": "/gothic/static/js/227.56e284f1.chunk.js",
     "static/js/526.6031a3de.chunk.js": "/gothic/static/js/526.6031a3de.chunk.js",
     "static/js/232.23869452.chunk.js": "/gothic/static/js/232.23869452.chunk.js",
@@ -10,15 +10,15 @@
     "static/media/image.svg": "/gothic/static/media/image.bdf1c60c297dc6528f56fe6a382dacdf.svg",
     "static/media/secound.svg": "/gothic/static/media/secound.79d6e1964317e21d4bc7498deb09c237.svg",
     "index.html": "/gothic/index.html",
-    "main.0f883b65.css.map": "/gothic/static/css/main.0f883b65.css.map",
-    "main.8650d314.js.map": "/gothic/static/js/main.8650d314.js.map",
+    "main.6fe3370e.css.map": "/gothic/static/css/main.6fe3370e.css.map",
+    "main.f43d882a.js.map": "/gothic/static/js/main.f43d882a.js.map",
     "227.56e284f1.chunk.js.map": "/gothic/static/js/227.56e284f1.chunk.js.map",
     "526.6031a3de.chunk.js.map": "/gothic/static/js/526.6031a3de.chunk.js.map",
     "232.23869452.chunk.js.map": "/gothic/static/js/232.23869452.chunk.js.map",
     "237.45e0ca57.chunk.js.map": "/gothic/static/js/237.45e0ca57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f883b65.css",
-    "static/js/main.8650d314.js"
+    "static/css/main.6fe3370e.css",
+    "static/js/main.f43d882a.js"
   ]
 }
