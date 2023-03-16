@@ -1,5 +1,5 @@
 <h1 align="center"> GOTHIC </h1>
-<h5 align="center">🌐 Link to website: </h5>
+<h5 align="center">🌐 Link to website: https://erkanuz.github.io/gothic/</h5>
 
 ## About
 It is a gothic based e-commerce website that has basic features that any online store has.
@@ -10,7 +10,8 @@ I aimed to perform the following tasks on this project:
 * Create a responsive and modern UI design
 * Create 3D object and add into project
 * Create user authentication using Firebase
-* Create search engine / sort function / dark mode
+* Create search engine, sorting function, clear cart button and dark mode
+* Create a star rating, countdown and preview of a specific product image in a modal page
 * Create a cart feature where we store our selected products using Redux
 * Create a contact us section to allow users to write short questions to us
 * Create a fake Check Out process where allow to us save our orders and shipping info into Firestore
