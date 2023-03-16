@@ -1,0 +1,473 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button {
+        @apply border border-black dark:border-white rounded-xl px-5 py-1
+    }
+
+    .edication_data {
+        @apply flex text-center
+    }
+
+    .edication_data {
+        @apply grid grid-cols-[1fr_max-content_1fr]
+    }
+
+    .xim {
+        @apply absolute content-[""] w-[300px] h-[2px] bg-black dark:bg-white
+    }
+
+    .zim {
+        @apply flex justify-center items-center
+    }
+
+    .zim::before {
+        @apply absolute content-[""] w-[300px] h-[2px] bg-black dark:bg-white left-[450px] xl:block hidden
+    }
+
+    .zim::after {
+        @apply absolute content-[""] w-[300px] h-[2px] bg-black dark:bg-white right-[450px] xl:block hidden
+    }
+
+    .hax {
+        @apply flex flex-col justify-center items-center
+    }
+
+    .hax::before {
+        @apply absolute content-[""] w-[3px] h-[45px] bg-black dark:bg-white block
+    }
+
+    .liquid::after, .liquid::before {
+        @apply absolute content-[""] w-[130%] h-[120%] bg-black dark:bg-white top-[-1%] left-[10%] translate-x-[-40%_75%]
+    }
+    
+    .liquid::before {
+        @apply rounded-[40%] bg-[rgba(20,20,20,1)] animate-[liq_5s_linear_infinite]
+    }
+
+    .liquid::after {
+        @apply rounded-[40%] bg-[rgba(20,20,20,.5)] animate-[liq_10s_linear_infinite]
+    }
+
+    .line {
+        @apply block w-[2px] h-full bg-black translate-x-[7px] -translate-y-2
+    }
+
+    .boxshadow {
+        @apply shadow-[0_0_5px_#4973ff,0_0_25px_#4973ff,0_0_50px_#4973ff,0_0_100px]
+    }
+
+    .skull1 {
+        @apply animate-[skull1_4s_infinite]
+    }
+
+    .skull2 {
+        @apply animate-[skull2_4s_infinite]
+    }
+
+    .skull3 {
+        @apply animate-[skull3_4s_infinite]
+    }
+
+    .skull4 {
+        @apply animate-[skull4_4s_infinite]
+    }
+
+    .pulse {
+        @apply h-6 w-6 m-auto inset-0 rounded-full grid place-content-center bg-gradient-to-t from-blue-300 to-blue-400
+    }
+
+    .pulse::after, .pulse::before {
+        @apply content-[""] absolute -z-10 w-full h-full bg-[#8a82fb] rounded-full opacity-[.7]
+    }
+
+    .pulse::before {
+        @apply animate-[pulse_2s_ease-in-out_infinite]
+    }
+
+    .pulse::after {
+        @apply animate-[pulse_2s_1s_ease-out_infinite]
+    }
+    
+    @keyframes pulse {
+        100% {
+            transform: scale(2.5);
+            opacity: 0;
+        }
+    }
+
+/*
+    @keyframes skull1 {
+        0%, 100% {
+          transform-origin: bottom left;
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform-origin: top right;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
+    @keyframes skull2 {
+        0%, 100% {
+          transform-origin: bottom left;
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform-origin: top right;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
+    @keyframes skull3 {
+        0%, 100% {
+          transform-origin: bottom right;
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform-origin: top left;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
+    @keyframes skull4 {
+        0%, 100% {
+          transform-origin: bottom right;
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform-origin: top left;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+*/
+    .footerline {
+        @apply 
+            relative cursor-pointer
+    }
+
+    .footerline::after {
+        @apply 
+            content-[''] bg-black dark:bg-white h-[3px] w-[0%] absolute left-0 -bottom-0 rounded-xl duration-500
+    }
+
+    .footerline:hover::after {
+        @apply
+            w-[100%]
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+      }
+
+    .about_images img:nth-child(1) {
+        @apply w-[300px] h-[250px] absolute z-10
+    }
+    
+    .about_images img:nth-child(2) {
+        @apply w-[300px] relative left-[65%] -bottom-[100px] z-20
+    }
+
+    @media screen and (max-width: 380px) {
+        .about_images {
+            @apply grid
+        }
+        .about_images img:nth-child(1) {
+            @apply relative
+        }
+        .about_images img:nth-child(2) {
+            @apply left-0 bottom-0 mt-4
+        }
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 28px; width: 80px;
+        left: 5px; bottom: 4px;
+        background-color: black;
+        border-radius: 20px;
+        transition: .4s;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(80px);
+    }
+
+    .header-input::before, .header-input::after {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .header-input::before {
+        content: "Light Mode";
+        left: 10px;
+    }
+
+    .header-input::after {
+        content: "Dark Mode";
+        right: 10px;
+    }
+
+    .header-input:checked::after {
+        color: white;
+        transition: .5s;
+    }
+
+    .header-input:not(:checked)::before {
+        color: white;
+        transition: .5s;
+    }
+
+    .scroll-down {
+        @apply h-[35px] w-5 border-2 border-black relative rounded-[50px] cursor-none
+    }
+    
+    .scroll-down::before,
+    .scroll-down::after {
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        border: 3px solid black;
+        height: 5px; width: 5px;
+        transform: translate(-50%, -100%) rotate(45deg);
+        border-top: transparent;
+        border-left: transparent;
+        animation: scroll-down 1s ease-in-out infinite;
+    }
+    
+    .scroll-down::after {
+        top: 20%;
+        animation-delay: .3s;
+    }
+    
+    @keyframes scroll-down {
+        0% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        60% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 90%;
+        }
+    }
+
+    .xox {
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .xox::after {
+        content: "";
+        width: 4px; height: 6rem;
+        transform: rotate(180deg);
+        background-color: black;
+    }
+
+    .xox::before {
+        content: "";
+        width: 4px; height: 6rem;
+        transform: rotate(180deg);
+        background-color: black;
+    }
+
+    .l {
+        color: black;
+        opacity: 0;
+        animation: pass 2s ease-in-out infinite;
+        animation-delay: 0.2s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .o {
+        color: black;
+        opacity: 0;
+        animation: pass 2s ease-in-out infinite;
+        animation-delay: 0.4s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .a {
+        color: black;
+        opacity: 0;
+        animation: pass 2s ease-in-out infinite;
+        animation-delay: 0.6s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .d {
+        color: black;
+        opacity: 0;
+        animation: pass 2s ease-in-out infinite;
+        animation-delay: 0.8s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .i {
+        color: black;
+        opacity: 0;
+        animation: pass 2s ease-in-out infinite;
+        animation-delay: 1s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .n {
+        color: black;
+        opacity: 0;
+        animation: pass 2s ease-in-out infinite;
+        animation-delay: 1.2s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .g {
+        color: black;
+        opacity: 0;
+        animation: pass 2s ease-in-out infinite;
+        animation-delay: 1.4s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .d1 {
+        color: black;
+        opacity: 0;
+        animation: pass1 2s ease-in-out infinite;
+        animation-delay: 1.6s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      .d2 {
+        color: black;
+        opacity: 0;
+        animation: pass1 2s ease-in-out infinite;
+        animation-delay: 2s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+
+      .d3 {
+        color: black;
+        opacity: 0;
+        animation: pass1 2s ease-in-out infinite;
+        animation-delay: 2.2s;
+        letter-spacing: 0.5em;
+        text-shadow: 2px 2px 3px #919191;
+      }
+      
+      @keyframes pass {
+        0% {
+          opacity: 1;
+        }
+      
+        50% {
+          opacity: 0;
+        }
+      
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes pass1 {
+        0% {
+          opacity: 1;
+        }
+      
+        50% {
+          opacity: 0;
+        }
+      
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .checkbox-wrapper-31:hover .check {
+        stroke-dashoffset: 0;
+      }
+      
+      .checkbox-wrapper-31 {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+      
+      .checkbox-wrapper-31 .background {
+        fill: #ccc;
+        transition: ease all 0.6s;
+        -webkit-transition: ease all 0.6s;
+      }
+      
+      .checkbox-wrapper-31 .stroke {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        stroke-dashoffset: 100;
+        stroke-dasharray: 100;
+        transition: ease all 0.6s;
+        -webkit-transition: ease all 0.6s;
+      }
+      
+      .checkbox-wrapper-31 .check {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        stroke-dashoffset: 22;
+        stroke-dasharray: 22;
+        transition: ease all 0.6s;
+        -webkit-transition: ease all 0.6s;
+      }
+      
+      .checkbox-wrapper-31 input[type=checkbox] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        margin: 0;
+        opacity: 0;
+      }
+      
+      .checkbox-wrapper-31 input[type=checkbox]:hover {
+        cursor: pointer;
+      }
+      
+      .checkbox-wrapper-31 input[type=checkbox]:checked + svg .background {
+        fill: #6cbe45;
+      }
+      
+      .checkbox-wrapper-31 input[type=checkbox]:checked + svg .stroke {
+        stroke-dashoffset: 0;
+      }
+      
+      .checkbox-wrapper-31 input[type=checkbox]:checked + svg .check {
+        stroke-dashoffset: 0;
+      }
+}
