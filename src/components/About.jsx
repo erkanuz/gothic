@@ -8,29 +8,66 @@ const About = () => {
   return (
       <div className='max-w-[1440px] mx-auto p-4 text-black dark:text-white'>
         <div className='h-screen mb-8'>
-        <div className='flex relative items-center justify-center flex-col gap-4'>
-          <h2>Scroll Down</h2>
-          <a href="#about" className='SI'><div className='scroll-down cursor-pointer dark:bg-white'></div></a>
-        </div>
         <Spline scene="https://prod.spline.design/MbI08bPrn7Irli1l/scene.splinecode" />
         </div>
 
-        <div className='w-full flex justify-center mb-8' id='about'>
+        <div className='w-full flex justify-center mb-8' id='#about'>
           <div className='w-1/2 grid gap-4'>
             <Divider className='bg-black dark:bg-white' />
             <Divider className='bg-black dark:bg-white' />
           </div>
         </div>
 
-        <div className='flex relative items-center justify-center flex-col gap-4'>
-          <h2>Scroll Down</h2>
-          <a href="#footer" className='SI'><div className='scroll-down cursor-pointer dark:bg-white'></div></a>
+        <div className='flex justify-center'>
+
+          <div className="h-[200px]">
+            <div className="overflow-hidden p-[5px] h-[50px]">
+              <div className="cloud_left"></div>
+              <div className="cloud_right"></div>
+            </div>
+            <div className="w-[180px] h-[140px]">
+              <div className="drop"></div>
+              <div className="drop"></div>
+              <div className="drop"></div>
+              <div className="drop"></div>
+              <div className="drop"></div>
+            </div>
+            <div className="relative w-[180px] h-[140px] -top-[140px]">
+              <div className="hit"></div>
+              <div className="hit"></div>
+              <div className="hit"></div>
+              <div className="hit"></div>
+              <div className="hit"></div>
+            </div>
+          </div>
+
+          <div className="h-[200px] scale-x-[-1]">
+            <div className="overflow-hidden p-[5px] h-[50px]">
+              <div className="cloud_left"></div>
+              <div className="cloud_right"></div>
+            </div>
+            <div className="w-[180px] h-[140px]">
+              <div className="drop"></div>
+              <div className="drop"></div>
+              <div className="drop"></div>
+              <div className="drop"></div>
+              <div className="drop"></div>
+            </div>
+            <div className="relative w-[180px] h-[140px] -top-[140px]">
+              <div className="hit"></div>
+              <div className="hit"></div>
+              <div className="hit"></div>
+              <div className="hit"></div>
+              <div className="hit"></div>
+            </div>
+          </div>
+          
         </div>
 
         <div className="container mx-auto p-4 text-center">
           <h2 className='text-4xl'>ABOUT US</h2>
 
-          <div className='grid grid-cols-1 sm:grid-cols-3 place-items-center my-12 gap-8'>
+          <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3 place-items-center my-12 gap-8'>
             <div className='sm:w-[600px] w-[300px]'><p className='text-justify'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking,which allows designers to consider the form of a webpage</p></div>
             <GiEvilWings size={100} />
             <div className='sm:w-[600px] w-[300px]'><p className='text-justify'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking,which allows designers to consider the form of a webpage</p></div>
@@ -50,7 +87,7 @@ const About = () => {
 
           <div className='grid md:grid-cols-2 xs:grid-cols-1 w-2/4 gap-10 my-10 justify-between'>
               <div className='text-justify'>
-              <h3 className='md:text-3xl xs:text-base mb-12'>The best weapons for you <br/>We provide you the best services</h3>
+              <h3 className='md:text-3xl xs:text-base mb-12'>The best Gothic outfits for you. We provide you the best services.</h3>
                 <p className='mb-4'>We offer you the best gothic stlye chlotes and accessories that will never outshine and fully equipped premium product,as well as quality service with our consultants</p>
                 <p>We offer you the best gothic stlye chlotes and accessories that will never outshine and fully equipped premium product,as well as quality service with our consultants</p>
               </div>
@@ -70,7 +107,7 @@ const About = () => {
             </div>
 
             <div className='text-lg'>
-                <h3 className='text-3xl text-start mb-12'>Get a preliminary consultation before purchasing the most <br/> accurate weapon for you</h3>
+                <h3 className='text-3xl text-start mb-12'>The best Gothic outfits for you. We provide you the best services.</h3>
                 <div className='text-justify'>
                 <p className='mb-4'>We offer you the best gothic stlye chlotes and accessories that will never outshine and fully equipped premium product,as well as quality service with our consultants</p>
                 <p>We offer you the best gothic stlye chlotes and accessories that will never outshine and fully equipped premium product,as well as quality service with our consultants</p>
@@ -87,7 +124,6 @@ const About = () => {
         <div id='footer' className='flex items-center justify-center mb-6'>
             <p className='text-sm italic'>&#169; Eric Uz. All rights reserved.</p>
         </div>
-        
       </div>
   )
 }
